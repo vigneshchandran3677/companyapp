@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Sample"
+        android:text="Travel Diary"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,20 +32,23 @@
         android:id="@+id/Admin"
         android:layout_width="155dp"
         android:layout_height="71dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="36dp"
         android:onClick="adminbtn"
         android:text="Admin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/User" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="TextView"
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="152dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="36dp"
+        android:onClick="docbtn"
+        android:text="Documentation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Admin" />
 

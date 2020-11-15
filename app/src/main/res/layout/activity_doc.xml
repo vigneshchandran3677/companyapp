@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="357dp"
+        android:layout_height="475dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="344dp"
+                android:layout_height="467dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="What is this app?\n\nThe application is used to keep tract of the travel history and the people meet the user in this covid19 pandamic.This automatically tracks the travel history and people(other app users) who the app user meets and add to the friends list automatically with date and time of meeting.\n\nUser\n\nThe user can add the post (places he travelled) and it is storeded in database. Other than this the location of the user fetch automatically in the backgorund and is uploaded to the server. Also the person who are in contact with is automatically tracked and added to the friends list. The friends list and the post history can be seen be the user by pressing the menu icon. So the travel history and person he met are automatically tracked and stored.\n\nAdmin\n\nThe details of all the users is shown to the admin(Government)(The login credientials is hardcoded for competion purpose).\n1)One the main screen by by pressing the map the admin can see the current location of all the users\n 2)The users are listed in the main screen\n3)By clicking at the user the can see all the post made that particular user. \n4)By pressing at the map in this screen admin can see all the places the user has visited(Updated for every 20 mins in background and every 10 second using using the app )\n5)Also the friends list is automatically added for each user based on their location.The time and date of the meeting is also listed." />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:onClick="loginbtn"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
